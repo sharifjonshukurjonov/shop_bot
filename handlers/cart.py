@@ -7,13 +7,13 @@ from aiogram.filters import Command
 router = Router()
 from aiogram.types import FSInputFile
 
-# Mahsulotlar ro‘yxati (bu asosiy faylingizdan kelsa yaxshi)
+
 flowers = {
     '1': {'name': '15 Роз "Испания"', 'price': 15000, 'image': 'https://example.com/ispaniya.jpg'},
     '2': {'name': '15 Роз "Ред Наоми"', 'price': 3500, 'image': 'https://example.com/rednaomi.jpg'}
 }
 
-# Foydalanuvchi savatlari
+
 cart = {}
 
 

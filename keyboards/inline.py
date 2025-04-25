@@ -1,16 +1,16 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# Viloyatlar ro'yxati
+
 regions = ["Toshkent", "Samarqand", "Andijon"]
 
-# Har bir viloyatga tegishli tumanlar
+
 districts = {
     "Toshkent": ["Yunusobod", "Chilonzor", "Mirzo Ulug‘bek"],
     "Samarqand": ["Urgut", "Kattaqo‘rg‘on", "Narpay"],
     "Andijon": ["Asaka", "Shahrixon", "Xonobod"]
 }
 
-# Viloyatlar uchun tugmalar
+
 def get_region_keyboard() -> InlineKeyboardMarkup:
     buttons = [
         [InlineKeyboardButton(text=region, callback_data=f"region:{region}")]
